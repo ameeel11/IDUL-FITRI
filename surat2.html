@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Surat</title>
   <style>
     body {
@@ -51,6 +52,41 @@
         border-radius: 10px;
         display: block;
         margin: 0 auto;
+    }
+
+      /* Mobile media query */
+    @media (max-width: 480px) {
+      body {
+        padding: 0.5rem;
+      }
+      
+      .surat {
+        width: 95vw;
+        padding: 1rem;
+        padding-bottom: 2rem;
+      }
+      
+      .isi-surat {
+        padding: 1rem;
+        gap: 0.75rem;
+      }
+      
+      h2.isi-surat {
+        padding: 0.75rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    /* Landscape */
+    @media (max-width: 768px) and (orientation: landscape) {
+      body {
+        align-items: flex-start;
+        padding-top: 2rem;
+      }
+      
+      .surat {
+        max-height: 90vh;
+      }
     }
   </style>
 </head>
